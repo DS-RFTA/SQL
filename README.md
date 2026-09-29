@@ -1,20 +1,25 @@
 
 
-Visão geral
+# Visão geral
+
 Projeto de análise de lead time em supply chain com foco em compras, integração de bases heterogêneas e geração de indicadores para tomada de decisão. O pipeline lê um arquivo Excel de pedidos e um CSV de notas fiscais, normaliza chaves de documento, cruza as fontes, calcula o lead time em dias, remove duplicidades com critério analítico e disponibiliza o resultado final para consumo em Excel, SQLite e dashboards. Ferramentas como README estruturado, código reproduzível e narrativa orientada a impacto ajudam a transformar um script técnico em portfólio de dados para GitHub.
 
-Storytelling 
+# Storytelling 
+
 Em operações de compras, atrasos entre a data do pedido e a entrada fiscal geram ruptura, excesso de estoque de segurança e perda de previsibilidade. Neste projeto, o objetivo é transformar dados operacionais dispersos em uma visão confiável do tempo de atendimento do fornecedor, permitindo acompanhar desempenho, identificar anomalias e priorizar ações de melhoria contínua.
 
 O valor do projeto está menos no cálculo isolado e mais na construção de uma camada analítica: padronização de NF, tratamento de inconsistências, integração entre fontes, persistência em banco e preparação da base para visualização em Power BI. Em portfólios de ciência de dados, um bom README deve explicar objetivo, método, execução e resultados de forma reprodutível para que outra pessoa consiga entender e rodar o projeto.
 
-Situação
+# Situação
+
 A área de compras possuía informações de pedidos em Excel e registros fiscais em CSV, mas sem uma visão consolidada do lead time entre emissão do pedido e entrada da nota. Isso limitava a medição do desempenho do fornecedor e dificultava o desenho de dashboards e KPIs de supply chain.
 
-Tarefa
+# Tarefa
+
 Estruturar um pipeline analítico capaz de integrar as duas fontes, limpar números de NF, calcular lead time por documento, eliminar duplicidades com um critério consistente e disponibilizar a base final para exploração em SQL e visualização em Power BI.
 
-Ação
+# Ação
+
 Desenvolvi a leitura e padronização dos arquivos com Python e pandas, tratando diferenças de formato entre Excel e CSV e extraindo apenas a parte numérica relevante da NF para garantir o cruzamento entre tabelas.
 
 Converti colunas de datas com tolerância a erro para evitar falhas silenciosas e permitir o cálculo robusto de lead time.
@@ -27,10 +32,15 @@ Exportei o resultado para Excel e carreguei a tabela em SQLite, viabilizando con
 
 Estruturei o projeto como peça de portfólio com narrativa de negócio, stack utilizada, KPIs sugeridos e próximos passos analíticos, alinhando técnica e comunicação executiva.
 
-Resultado
+# Resultado
+
 O projeto gera uma base final pronta para monitorar lead time de compras, comparar fornecedores, investigar desvios e alimentar dashboards gerenciais. Além disso, demonstra competências valiosas para um portfólio de dados: engenharia leve de dados, modelagem analítica, definição de métricas, uso de SQL e capacidade de traduzir dados em decisões operacionais.
 
-Arquitetura analítica
+<img width="959" height="723" alt="image" src="https://github.com/user-attachments/assets/22d8dc68-2984-482f-9d23-c33321e0ca36" />
+
+
+# Arquitetura analítica
+
 Entrada de dados: Orders.xls e relatorioAnaliticoDeNotasFiscaisCompra.csv
 
 Tratamento: limpeza de NF, validação de registros inválidos e padronização de datas
@@ -43,7 +53,8 @@ Camada de persistência: exportação para lead_time_resultado.xlsx e carga em l
 
 Consumo analítico: consultas SQL e dashboard em Power BI
 
-KPIs recomendados
+# KPIs recomendados
+
 Os painéis de supply chain costumam acompanhar lead time do fornecedor, variabilidade do lead time e indicadores ligados a cumprimento de prazo, pois essas métricas ajudam a identificar gargalos e priorizar melhorias com fornecedores.
 
 Lead time médio de compras
@@ -61,3 +72,22 @@ Quantidade de NFs com lead time negativo ou inconsistente
 Evolução mensal do lead time
 
 Ranking de documentos críticos por atraso
+
+<img width="973" height="732" alt="image" src="https://github.com/user-attachments/assets/5df8c201-f2ba-4c78-bc0e-941b20b64f29" />
+<img width="246" height="185" alt="image" src="https://github.com/user-attachments/assets/612fbfff-bee7-449e-8400-26c4a53833a0" />
+<img width="471" height="215" alt="image" src="https://github.com/user-attachments/assets/fdb14f73-55a6-4508-ae46-6ec984929002" />
+
+
+## Próximos passos estratégicos
+
+
+• Integração com indicadores de estoque e ruptura
+
+
+# Ferramentas utilizadas:
+
+
+Python | Pandas | SQL | SQLite | CSV | Excel | Power BI | Looker
+
+
+## Esse tipo de projeto é um exemplo claro de como Data Analytics em Supply Chain não é sobre dados, é sobre decisões melhores, mais rápidas e com menos risco. 
