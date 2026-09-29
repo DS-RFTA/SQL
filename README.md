@@ -53,6 +53,12 @@ Camada de persistência: exportação para lead_time_resultado.xlsx e carga em l
 
 Consumo analítico: consultas SQL e dashboard em Power BI
 
+
+<img width="973" height="732" alt="image" src="https://github.com/user-attachments/assets/5df8c201-f2ba-4c78-bc0e-941b20b64f29" />
+<img width="246" height="185" alt="image" src="https://github.com/user-attachments/assets/612fbfff-bee7-449e-8400-26c4a53833a0" />
+<img width="471" height="215" alt="image" src="https://github.com/user-attachments/assets/fdb14f73-55a6-4508-ae46-6ec984929002" />
+
+
 # KPIs recomendados
 
 Os painéis de supply chain costumam acompanhar lead time do fornecedor, variabilidade do lead time e indicadores ligados a cumprimento de prazo, pois essas métricas ajudam a identificar gargalos e priorizar melhorias com fornecedores.
@@ -73,9 +79,7 @@ Evolução mensal do lead time
 
 Ranking de documentos críticos por atraso
 
-<img width="973" height="732" alt="image" src="https://github.com/user-attachments/assets/5df8c201-f2ba-4c78-bc0e-941b20b64f29" />
-<img width="246" height="185" alt="image" src="https://github.com/user-attachments/assets/612fbfff-bee7-449e-8400-26c4a53833a0" />
-<img width="471" height="215" alt="image" src="https://github.com/user-attachments/assets/fdb14f73-55a6-4508-ae46-6ec984929002" />
+
 
 
 ## Próximos passos estratégicos
